@@ -193,6 +193,7 @@ our Gemsets, so:
     # as the 'dashing' user...
     gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -sSL https://get.rvm.io | bash -s stable --autolibs=read-fail
+    source ~/.rvm/scripts/rvm
 
 Note the `--autolibs=read-fail`, per http://stackoverflow.com/a/17219765/8446
 
