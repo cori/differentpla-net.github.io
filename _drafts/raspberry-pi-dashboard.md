@@ -156,8 +156,6 @@ and we might need the `ruby-dev` package as well:
 
     sudo apt-get -y install ruby ruby-dev   # installs Ruby 2.1
 
-<------------------ HERE, plus nodejs
-
 ## RVM prerequisites
 
 Also install some things we'll need later:
@@ -199,7 +197,7 @@ Note the `--autolibs=read-fail`, per http://stackoverflow.com/a/17219765/8446
 
     rvm install 2.2.1
 
-This will take around **1 hour** to complete.
+This will take around **2 hours** to complete.
 
 Why use RVM? Because otherwise `gem` (and `bundler`) will occasionally want to
 install things globally, and they'll ask for a password for `sudo`, and the
@@ -233,27 +231,16 @@ and I like to have something to look at.
 
 Check it's working:
 
+    cd ~
     dashing new dashboard   # creates a new dashboard in the 'dashboard' directory.
     cd dashboard
-    bundle install
+    bundle install          # only needed for the first dashboard.
     dashing start
 
 ## TODO: Making dashing start automatically
 
+<--- HERE
+
 ## TODO: Chromium Kiosk
 ## TODO: Jenkins Tunnel
-
-
-
----------- 8< ---------
-
-
-
-
-Why wheezy? Because the new "Jessie" build includes a GUI, and I don't want any
-of that installed.
-
-But, scarily enough, we'll upgrade to "Jessie" later, for node.js support:
-https://github.com/nathanjohnson320/node_arm/issues/13
-
 
